@@ -3,7 +3,16 @@ type: docker
 name: default
 
 steps:
+  - name: clone-repository
+    image: alpine/git
+    environment:
+      GIT_DEPTH: "1"
+    commands:
+      - git clone https://github.com/DivineTaminang/landlords-checking-tenants.git ./repo
+
   - name: print-message
     image: alpine:latest
     commands:
       - echo "Hello, Drone CI! This is a simple pipeline."
+
+
