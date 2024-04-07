@@ -8,7 +8,7 @@ steps:
     environment:
       GIT_DEPTH: "1"
     commands:
-      - git clone https://github.com/DivineTaminang/landlords-checking-tenants.git ./repo
+      - git clone https://github.com/DivineTaminang23/landlords-checking-tenants.git ./repo
 
   - name: print-message
     image: alpine:latest
