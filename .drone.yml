@@ -7,4 +7,7 @@ steps:
     image: alpine:latest
     commands:
       - echo "Hello, Drone CI! This is a simple pipeline."
-# next step here here 
+    - name: Next-message
+    image: alpine:latest
+    commands:
+      - echo "Hi, This is my next pipeline test for my DRONE CI/CD pipeline. Many thanks".
